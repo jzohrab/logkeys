@@ -1,3 +1,5 @@
+![warning](./docs_warning.png)
+
 # Licence #
 logkeys is dual licensed under the terms of either [GNU GPLv3](http://www.gnu.org/licenses/gpl-3.0.html) or later (required by Google), or [WTFPLv2](http://sam.zoy.org/wtfpl/) or later. Pick whichever you prefer!
 
