@@ -5,7 +5,7 @@
 ## Important announcement for Arch Linux users ##
 
 logkeys was having an [issue on Arch Linux where it produced an empty
-log](http://code.google.com/p/logkeys/issues/detail?id=60). The issue
+log](https://github.com/kernc/logkeys/issues/60). The issue
 is now fixed in the repository (fix found by **bytbox** from the Arch
 Linux community), so if you're on Arch (or you seem to experience this
 issue), please check out the source from GitHub.
@@ -92,7 +92,7 @@ logkeys supports keyboards like on the image below (courtesy of
 SEOConsultants.com). These are standard 101 to 105-key PC keyboards
 with no Asian extensions.
 
-<img src='http://wiki.logkeys.googlecode.com/git/images/keyboard.png' alt='104-key PC keyboard' />
+![104-key PC keyboard'](./keyboard.png)
 
 logkeys should also work with serial as well as USB
 keyboards, or similar "HID" devices.
