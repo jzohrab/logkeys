@@ -1,10 +1,3 @@
-<br />
-
-<br />
-
----
-
-
 # Licence #
 logkeys is dual licensed under the terms of either [GNU GPLv3](http://www.gnu.org/licenses/gpl-3.0.html) or later (required by Google), or [WTFPLv2](http://sam.zoy.org/wtfpl/) or later. Pick whichever you prefer!
 
@@ -52,8 +45,6 @@ If that is the case use either `locale-gen` or install/reconfigure your distribu
 ```
 $ apropos locale
 ```
-
-<wiki:gadget up\_ad\_client="2900001379782823" up\_ad\_slot="3948022173" width="728" height="90" border="0" up\_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" />
 
 # Usage how-to #
 
@@ -104,8 +95,6 @@ Before using logkeys, please read the manual page first.
  $ man logkeys
 ```
 
-<wiki:gadget up\_ad\_client="2900001379782823" up\_ad\_slot="3948022173" width="728" height="90" border="0" up\_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" />
-
 ## Autorun at system start ##
 If you want logkeys to autorun when your OS boots, you have several options.
 You can edit _/etc/rc.local_ (or _/etc/rc.d/rc.local_) file and add logkeys execution line before the final `exit 0` call, e.g.
@@ -131,38 +120,33 @@ This may also apply if you get the following error:
   logkeys: Couldn't determine keyboard device. :/
 ```
 
-<table width='750'>
-<tr><td valign='top'>
+The solution is to determine the correct event device id, and then run logkeys with <b>--device</b> (-d) switch, specifying that device manually.
 
-The solution is to determine the correct event device id, and then run logkeys with <b>--device</b> (-d) switch, specifying that device manually.<br>
-<br>
-The procedure for manually learning the device id to use is as follows:<br>
-<br>
-As root, for each existing device <i>eventX</i> in <i>/dev/input/</i>, where X is a number between 0 and 31 inclusively, write:<br>
-<pre><code> $ cat /dev/input/eventX<br>
-</code></pre>
-then type some arbitrary characters. If you <b>see any output</b>, that is the <b>device to be used</b>. If you don't see any output, press Ctrl+C and continue with the next device.<br>
-<br>
-If this happened to be your issue, please <a href='http://code.google.com/p/logkeys/source/checkout'>checkout the latest version from the repository</a> where keyboard recognition is relatively better implemented. If error persists, <b>please add to bug report <a href='http://code.google.com/p/logkeys/issues/detail?id=42'>here</a></b>, attaching your <i>/proc/bus/input/devices</i> file as well as specifying which was the correct event id. Thanks.<br>
-<br>
-</td><td width='340px' valign='top'>
-<wiki:gadget up_ad_client="2900001379782823" up_ad_slot="8733006390" width="336" height="280" border="0" up_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" /><br>
-</td></tr>
-</table>
+The procedure for manually learning the device id to use is as follows:
+
+As root, for each existing device <i>eventX</i> in <i>/dev/input/</i>, where X is a number between 0 and 31 inclusively, write `$ cat /dev/input/eventX`, and then type some arbitrary characters. If you <b>see any output</b>, that is the <b>device to be used</b>. If you don't see any output, press Ctrl+C and continue with the next device.
+
+If this happened to be your issue, please <a href='http://code.google.com/p/logkeys/source/checkout'>checkout the latest version from the repository</a> where keyboard recognition is relatively better implemented. If error persists, <b>please add to bug report <a href='http://code.google.com/p/logkeys/issues/detail?id=42'>here</a></b>, attaching your <i>/proc/bus/input/devices</i> file as well as specifying which was the correct event id. Thanks.
+
 
 ## Logkeys outputs wrong characters ##
+
 It is very likely that you will see only some characters recognized, without any hope for Shift and AltGr working even slightly correct, especially when starting logkeys in X. In that case it is better to switch to virtual terminal, e.g. tty4 (Ctrl+Alt+F4), and there execute:
+
 ```
  $ logkeys --export-keymap=my_lang.map
 ```
+
 Then open _my\_lang.map_ in UTF-8 enabled text editor and manually repair any missing or incorrectly determined mappings. Character keys are defined with two to three space-delimited characters per line (first without modifiers, second with shift, third with AltGr), and function keys are strings of **at most** 7 characters.
 
 Make sure your customized keymap follows the [logkeys keymap format specification](Keymaps#Format.md)!
 
 From then on, execute logkeys with **--keymap** switch, e.g.
+
 ```
  $ logkeys --start --keymap my_lang.map
 ```
+
 Again, see if it now works correctly (and character keys appear correct when you are viewing the log file in editor), and opt to modify _bin/llk_ starter script.
 
 If you create full and completely valid keymap for your particular language,
@@ -174,12 +158,11 @@ Some languages may already have [keymaps available](http://code.google.com/p/log
 Please report all found bugs on the [issues tracking page](http://code.google.com/p/logkeys/issues/).
 
 # Planned features (roadmap) #
+
 TODO file provided with release currently holds following demanded features:
   * Add support for sending logs via email.
   * Optionally log title of the focused window.
   * Capture clipboard contents.
   * Add support for mouse events (i.e. on mouse click the focus may have changed).
-Depending on the amount of extra free time, these features shall be implemented in the foreseeable future.
 
 If you have time on your hands and the required interest, you are welcome to hack at any of those or completely other features yourself.
-
