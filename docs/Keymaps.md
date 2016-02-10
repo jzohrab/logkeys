@@ -1,33 +1,35 @@
-
-<br />
-
-
-&lt;hr/&gt;
-
-
+# Keymaps
 
 If neither **--us-keymap** switch nor **--keymap** switch are used, then logkeys determines the keymap automatically with the help of **dumpkeys** command. For it to work even slightly reliably (mapping correct character), [console kernel keymap needs to be set](Documentation#Installation.md).
 
 If you are using US layout keyboard and need default US keymap, run logkeys with **--us-keymap** switch.
 
-# Format #
+## Existing keymaps
+
+Some keymaps have been committed in this repo.  See the [keymaps directory](../keymaps).
+
+Be aware that using the keymap that matches your keyboard layout doesn't necessarily mean that all keys are covered or that the characters match to those that you type in – the keymap used by your system (loaded by **loadkeys** command for console, and **setxkbmap** command for X) may be set completely arbitrarily. In most cases, though, these should work fine.
+
+... (upload yours as a [new issue](http://code.google.com/p/logkeys/issues/))
+
+You can easily create keymaps for your layout by taking one example and then modifying it with the help of [keyboard layout tool](http://msdn.microsoft.com/en-us/goglobal/bb964651.aspx) by Microsoft.
+
+## Format
 
 The keymap file is expected to be UTF-8 encoded.
 
-Each line of file represents either one character key or one function key.  The for‐
-mat specifies at least two and up to three space-delimited characters  on  character
-key lines (first character without modifiers, second with Shift in action, optional third with
-AltGr in action), and up to 7 characters long string on function key lines.
+Each line of file represents either one character key or one function
+key.  The format specifies at least two and up to three
+space-delimited characters on character key lines (first character
+without modifiers, second with Shift in action, optional third with
+AltGr in action), and up to 7 characters long string on function key
+lines.
 
-The [keymap for Slovene keyboard layout](Keymaps#Download.md) (also Croatian) would look like:
-(note, line numbers are printed for convenience only)
-<table width='750px'>
-<blockquote><tr>
-<blockquote><td width='160' valign='top'>
-<wiki:gadget up_ad_client="2900001379782823" up_ad_slot="4184917647" width="160" height="600" border="0" up_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" /><br>
-</td>
-<td valign='top'>
-<pre><code>  1: &lt;Esc&gt;<br>
+For example, Slovene or Croatian keymap would look like this (line
+numbers are added for convenience only):
+
+````
+  1: &lt;Esc&gt;<br>
   2: 1 ! ~<br>
   3: 2 " ˇ<br>
   4: 3 # ^<br>
@@ -133,13 +135,10 @@ The [keymap for Slovene keyboard layout](Keymaps#Download.md) (also Croatian) wo
 104: &lt;LMeta&gt;<br>
 105: &lt;RMeta&gt;<br>
 106: &lt;Menu&gt;<br>
-</code></pre>
-</td>
-</blockquote></tr>
-</table>
-How does one know which lines belong to character keys and which lines to function keys?</blockquote>
 
-Well,  the  easiest  way is to use **--export-keymap**, and examine the exported keymap.
+How does one know which lines belong to character keys and which lines to function keys?
+
+Well, the easiest way is to use **--export-keymap**, and examine the exported keymap.
 Make sure you export in a virtual terminal (Ctrl+Alt+Fn) and not in X as this way there is higher chance of more keys getting exported correctly (don't ask me why).
 
 Basically, **--export-keymap** ouputs 106 lines for 106 keys, even if some of those keys
@@ -156,42 +155,3 @@ If you create full and completely valid keymap for your particular language, ple
 upload the contents as a [new issue](http://code.google.com/p/logkeys/issues/) or send it to my e-mail. Thanks!
 
 When arranging your keymap file, you can help yourself with this [keyboard layout tool](http://msdn.microsoft.com/en-us/goglobal/bb964651.aspx) provided by Microsoft.
-
-<wiki:gadget up\_ad\_client="2900001379782823" up\_ad\_slot="3948022173" width="728" height="90" border="0" up\_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" />
-
-# Download #
-Here are convenience keymap files provided that you can use. Be aware that using the keymap that matches your keyboard layout doesn't necessarily mean that all keys are covered or that the characters match to those that you type in – the keymap used by your system (loaded by **loadkeys** command for console, and **setxkbmap** command for X) may be set completely arbitrarily. In most cases, though, these should work fine.
-
-(right-click "Save Target As...")
-
-<table width='100%'>
-<tr><td width='200px' valign='top'>
-
-<ul><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/en_GB.map'>English (UK)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/fr_CH.map'>French (CH)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/fr.map'>French (FR)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/fr-dvorak-bepo.map'>French (Bepo keyboard)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/de.map'>German</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/hu.map'>Hungarian</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/it.map'>Italian</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/no.map'>Norwegian</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/pt_BR.map'>Portuguese (Brazil)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/pt_PT.map'>Portuguese (Portugal)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/ro.map'>Romanian</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/ru.map'>Russian</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/sk_QWERTY.map'>Slovak (QWERTY)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/sk_QWERTZ.map'>Slovak (QWERTZ)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/sl.map'>Slovene</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/es_AR.map'>Spanish (Argentina)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/es_ES.map'>Spanish (Spain)</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/sv.map'>Swedish</a>
-</li><li><a href='http://wiki.logkeys.googlecode.com/git/keymaps/tr.map'>Turkish</a></li></ul>
-
-</td><td width='310px' valign='top'>
-<wiki:gadget up_ad_client="2900001379782823" up_ad_slot="9370746681" width="300" height="250" border="0" up_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" /><br>
-</td></tr>
-</table>
-
-... (upload yours as a [new issue](http://code.google.com/p/logkeys/issues/))
-
-You can easily create keymaps for your layout by taking one example and then modifying it with the help of [keyboard layout tool](http://msdn.microsoft.com/en-us/goglobal/bb964651.aspx) by Microsoft.
