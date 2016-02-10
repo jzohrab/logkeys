@@ -10,27 +10,29 @@ being fully aware of Shift and AltGr key modifiers.
 
 ## Installation
 
-Provided your GNU/Linux distribution doesn't include logkeys package in its
-repositories, manual installation of logkeys from source is as easy as:
+Provided your GNU/Linux distribution doesn't include logkeys package
+in its repositories, manual installation of logkeys from source is as
+easy as cloning this repo or [downloading a zip of the
+source](https://github.com/kernc/logkeys/archive/master.zip),
+unzipping, and building:
 
-    $ tar xvzf logkeys-0.1.1.tar.gz      # to extract the logkeys archive
- 
-    $ cd logkeys-0.1.1/build     # move to build directory to build there
-    $ ../configure               # invoke configure from parent directory
-    $ make                       # make compiles what it needs to compile
-    ( become superuser now )     # you need root to install in system dir
-    # make install               # installs binaries, manuals and scripts
+    $ unzip logkeys-master.zip
+    $ cd logkeys-master/src
+    $ ../configure
+    $ make
+    $ su               # get root to install in system
+    $ make install     # installs binaries, manuals and scripts
 
-That's it.
+To uninstall logkeys, remove accompanying scripts and manuals:
 
-To ever uninstall logkeys, remove accompanying scripts and manuals, issue
-
-    # make uninstall    # in the same logkeys-0.1.1/build dir from before
+    # make uninstall    # in the same src dir
 
 A copy of these instructions is in the accompanying INSTALL file.
 
 
 ## Usage how-to
+
+Abuse the output of this software wisely.
 
 logkeys is simple. You can either invoke it directly, by typing full command 
 line, or use the provided scripts. There are two helper programs in this 
@@ -78,12 +80,11 @@ keys.
 logkeys acts as a daemon, and you stop the running logger process with
 `$ logkeys --kill`, or use the `bin/llkk` script.
 
+## Documentation
+
 For more information about logkeys log file format, logkeys keymap
 format, and command line arguments, read the application manual, `$
 man logkeys`, or read [the documentation](./docs).
-
-Abuse the output of this software wisely.
-
 
 ## Troubleshooting
 
