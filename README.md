@@ -97,12 +97,10 @@ logkeys acts as a daemon, and you stop the running logger process with
 
 (or bin/llkk provided script).
 
-For more information about logkeys log file format, logkeys keymap format, and
-command line arguments, read the application manual,
-
-    $ man logkeys
-
-or see the wiki at project website: http://code.google.com/p/logkeys/
+For more information about logkeys log file format, logkeys keymap
+format, and command line arguments, read the application manual, `$
+man logkeys`, or see the wiki at project website:
+http://code.google.com/p/logkeys/
 
 Abuse the output of this software wisely.
 
