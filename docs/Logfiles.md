@@ -48,5 +48,3 @@ Logging stopped at 2009-12-11 09:58:54+0100
 ```
 Even when **--no-func-keys** is in effect, Space and Tab key presses are logged as a
 single space character.
-
-<wiki:gadget up\_ad\_client="2900001379782823" up\_ad\_slot="3948022173" width="728" height="90" border="0" up\_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source,format" url="http://goo.gl/R5bvK" />
