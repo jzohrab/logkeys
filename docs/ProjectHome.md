@@ -22,11 +22,18 @@ logkeys was having an [issue on Arch Linux where it produced an empty log](http:
 
 ---
 
-### What is logkeys? ###
+### What is logkeys?
 
-**logkeys is a linux keylogger** (GNU/Linux systems only). It is no more advanced than other available linux keyloggers, but is a bit more up to date, it doesn't unreliably repeat keys and it should never crash your X. All in all, it just seems to work. It relies on event interface of the Linux input subsystem. Once set, it logs all common character and function keys, while also being fully aware of Shift and AltGr key modifiers. **It works with serial as well as USB keyboards**.
+**logkeys is a linux keylogger** (GNU/Linux systems only).  It is no
+more advanced than other available linux keyloggers, but is a bit more
+up to date, it doesn't unreliably repeat keys and it should never
+crash your X. All in all, it just seems to work. It relies on event
+interface of the Linux input subsystem. Once set, it logs all common
+character and function keys, while also being fully aware of Shift and
+AltGr key modifiers. **It works with serial as well as USB
+keyboards**.
 
-### What is a keylogger? ###
+### What is a keylogger?
 
 Keylogger is a software that quietly monitors keyboard input so as to
 log any keypresses the user makes. Keyloggers can be used by malicious
@@ -43,11 +50,31 @@ keys in order to create your custom Dvorak-style keyboard (I've seen
 that done). Perhaps you want EVERYTHING you've typed or written in the
 past months archived for ANY purpose... Uses are limitless.
 
-### Are there alternative Linux keyloggers? ###
+### Are there alternative Linux keyloggers?
 
 There is a plethora of keyloggers for Windows, but not so many for Linux.
 
-On GNU/Linux systems and other reasonable operating systems, keyloggers can be easily implemented with a few lines of shell code. Novice users, however, are usually limited to a narrow set of the following tools: [lkl](http://sourceforge.net/projects/lkl/) from 2005, [uberkey](http://gnu.ethz.ch/linuks.mine.nu/uberkey/), which appears dead, [THC-vlogger](http://freeworld.thc.org/releases.php?q=vlogger), made by a renowned group of hackers, and [PyKeylogger](http://pykeylogger.sourceforge.net/). All these tools have their pros and cons. Lkl, for example, sometimes abnormally repeats keys and [its keymap configuration is rather awkward](http://www.google.com/search?q=lkl+keymap) for a range of users. Uberkey, which is just over a hundred lines of code, also often repeats keys and what is worse, [it makes your mouse move abruptly](http://www.google.com/search?q=uberkey+mouse+problem), loosing any sense of control. PyKeylogger, on the other hand, while very feature rich, only works in X environment. Finally, there is vlogger, ...umm..., about which I cannot say anything specifically, only that it is receiving low score all around the web and it only logs shell sessions. There may be other tools, but either way logkeys definitely makes a simple and competitive addition.
+On GNU/Linux systems and other reasonable operating systems,
+keyloggers can be easily implemented with a few lines of shell
+code. Novice users, however, are usually limited to a narrow set of
+the following tools: [lkl](http://sourceforge.net/projects/lkl/) from
+2005, [uberkey](http://gnu.ethz.ch/linuks.mine.nu/uberkey/), which
+appears dead,
+[THC-vlogger](http://freeworld.thc.org/releases.php?q=vlogger), made
+by a renowned group of hackers, and
+[PyKeylogger](http://pykeylogger.sourceforge.net/). All these tools
+have their pros and cons. Lkl, for example, sometimes abnormally
+repeats keys and [its keymap configuration is rather
+awkward](http://www.google.com/search?q=lkl+keymap) for a range of
+users. Uberkey, which is just over a hundred lines of code, also often
+repeats keys and what is worse, [it makes your mouse move
+abruptly](http://www.google.com/search?q=uberkey+mouse+problem),
+loosing any sense of control. PyKeylogger, on the other hand, while
+very feature rich, only works in X environment. Finally, there is
+vlogger, ...umm..., about which I cannot say anything specifically,
+only that it is receiving low score all around the web and it only
+logs shell sessions. There may be other tools, but either way logkeys
+definitely makes a simple and competitive addition.
 
 ### Does logkeys work with USB keyboards? ###
 
