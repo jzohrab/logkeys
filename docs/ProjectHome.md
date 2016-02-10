@@ -18,8 +18,6 @@ logkeys was having an [issue on Arch Linux where it produced an empty log](http:
   * also recognize "HID" USB keyboard devices
   * bug fixes
 
-<wiki:gadget up\_ad\_client="2900001379782823" up\_ad\_slot="5408946622" width="728" height="90" border="0" up\_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" />
-
 
 ---
 
@@ -41,32 +39,4 @@ logkeys Linux keylogger works with serial as well as USB keyboards or similar "H
 ### So what keyboards logkeys does work with? ###
 logkeys supports keyboards like on the image below (courtesy of SEOConsultants.com). These are standard 101 to 105-key PC keyboards with no Asian extensions.<br />
 <img src='http://wiki.logkeys.googlecode.com/git/images/keyboard.png' alt='104-key PC keyboard' />
-
-<table width='750'>
-<tr><td width='340' valign='top'>
-<wiki:gadget up_ad_client="2900001379782823" up_ad_slot="8733006390" width="336" height="280" border="0" up_keywords="logkeys,gnu,linux,keylogger,keyboard,serial,usb,software,open-source" url="http://goo.gl/R5bvK" /><br>
-</td><td valign='top'>
-
-<font size='3'>So, you think this linux keylogger is for you?<br>
-<br>
-<a href='http://code.google.com/p/logkeys/downloads/'>Download logkeys</a> now.<br>
-<br>
-Or checkout a <a href='http://code.google.com/p/logkeys/source/checkout'>much newer version from SVN</a>.</font>
-
-And before using it, <b>please read the <a href='Documentation.md'>documentation</a></b>! Thanks. :-)<br>
-<br>
-<hr />
-
-<h3>SFW Distractions</h3>
-If you want to <b>improve your programming skills</b>, <b>play</b> some of these <b><a href='http://educative-games.org'>educative programming games</a></b>.<br>
-<br>
-<b>How did these Google ads get here</b>?<br>
-See <a href='http://code.google.com/p/gprojecthosting-adsense/'>Adsense for Google Code Hosting project</a>.<br>
-<br>
-</td></tr>
-</table>
-
-<font size='4'><b>Get <a href='http://www.getfreedomain.name'>Free Domain Name</a></b></font> (no ads, no referals, no hosting, no trick... free-for-all domains [click here](http://www.getfreedomain.name/))
-
-
 
