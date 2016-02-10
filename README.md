@@ -134,7 +134,7 @@ Again, see if it now works correctly (character keys appear correct when you
 are viewing the log file in editor), and opt to modify bin/llk starter script.
 
 If you create full and completely valid keymap for your particular language,
-please upload it to website or send it to me by e-mail. Thanks.
+please attach it to a new issue.
 
 
 ## Further information
