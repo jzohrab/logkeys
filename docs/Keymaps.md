@@ -28,113 +28,114 @@ lines.
 For example, Slovene or Croatian keymap would look like this (line
 numbers are added for convenience only):
 
-````
-  1: &lt;Esc&gt;<br>
-  2: 1 ! ~<br>
-  3: 2 " ˇ<br>
-  4: 3 # ^<br>
-  5: 4 $ ˘<br>
-  6: 5 % °<br>
-  7: 6 &amp; ˛<br>
-  8: 7 / `<br>
-  9: 8 ( ˙<br>
- 10: 9 ) ´<br>
- 11: 0 = ˝<br>
- 12: ' ? ¨<br>
- 13: + * ¸<br>
- 14: &lt;BckSp&gt;<br>
- 15: &lt;Tab&gt;<br>
- 16: q Q \<br>
- 17: w W |<br>
- 18: e E €<br>
- 19: r R<br>
- 20: t T<br>
- 21: z Z<br>
- 22: u U<br>
- 23: i I<br>
- 24: o O<br>
- 25: p P<br>
- 26: š Š ÷<br>
- 27: đ Đ ×<br>
- 28: &lt;Enter&gt;<br>
- 29: &lt;LCtrl&gt;<br>
- 30: a A<br>
- 31: s S<br>
- 32: d D<br>
- 33: f F [<br>
- 34: g G ]<br>
- 35: h H<br>
- 36: j J<br>
- 37: k K ł<br>
- 38: l L Ł<br>
- 39: č Č<br>
- 40: ć Ć ß<br>
- 41: ¸ ¨<br>
- 42: &lt;LShft&gt;<br>
- 43: ž Ž ¤<br>
- 44: y Y<br>
- 45: x X<br>
- 46: c C<br>
- 47: v V @<br>
- 48: b B {<br>
- 49: n N }<br>
- 50: m M §<br>
- 51: , ; &lt;<br>
- 52: . : &gt;<br>
- 53: - _<br>
- 54: &lt;RShft&gt;<br>
- 55: &lt;KP*&gt;<br>
- 56: &lt;LAlt&gt;<br>
- 57:<br>
- 58: &lt;CpsLk&gt;<br>
- 59: &lt;F1&gt;<br>
- 60: &lt;F2&gt;<br>
- 61: &lt;F3&gt;<br>
- 62: &lt;F4&gt;<br>
- 63: &lt;F5&gt;<br>
- 64: &lt;F6&gt;<br>
- 65: &lt;F7&gt;<br>
- 66: &lt;F8&gt;<br>
- 67: &lt;F9&gt;<br>
- 68: &lt;F10&gt;<br>
- 69: &lt;NumLk&gt;<br>
- 70: &lt;ScrLk&gt;<br>
- 71: &lt;KP7&gt;<br>
- 72: &lt;KP8&gt;<br>
- 73: &lt;KP9&gt;<br>
- 74: &lt;KP-&gt;<br>
- 75: &lt;KP4&gt;<br>
- 76: &lt;KP5&gt;<br>
- 77: &lt;KP6&gt;<br>
- 78: &lt;KP+&gt;<br>
- 79: &lt;KP1&gt;<br>
- 80: &lt;KP2&gt;<br>
- 81: &lt;KP3&gt;<br>
- 82: &lt;KP0&gt;<br>
- 83: &lt;KP.&gt;<br>
- 84: &lt; &gt;<br>
- 85: &lt;F11&gt;<br>
- 86: &lt;F12&gt;<br>
- 87: &lt;KPEnt&gt;<br>
- 88: &lt;RCtrl&gt;<br>
- 89: &lt;KP/&gt;<br>
- 90: &lt;SysRq&gt;<br>
- 91: &lt;AltGr&gt;<br>
- 92: &lt;Break&gt;<br>
- 93: &lt;Home&gt;<br>
- 94: &lt;Up&gt;<br>
- 95: &lt;PgUp&gt;<br>
- 96: &lt;Left&gt;<br>
- 97: &lt;Right&gt;<br>
- 98: &lt;End&gt;<br>
- 99: &lt;Down&gt;<br>
-100: &lt;PgDn&gt;<br>
-101: &lt;Ins&gt;<br>
-102: &lt;Del&gt;<br>
-103: &lt;Pause&gt;<br>
-104: &lt;LMeta&gt;<br>
-105: &lt;RMeta&gt;<br>
-106: &lt;Menu&gt;<br>
+```
+  1: <Esc>
+  2: 1 ! ~
+  3: 2 " ˇ
+  4: 3 # ^
+  5: 4 $ ˘
+  6: 5 % °
+  7: 6 &amp; ˛
+  8: 7 / `
+  9: 8 ( ˙
+ 10: 9 ) ´
+ 11: 0 = ˝
+ 12: ' ? ¨
+ 13: + * ¸
+ 14: <BckSp>
+ 15: <Tab>
+ 16: q Q \
+ 17: w W |
+ 18: e E €
+ 19: r R
+ 20: t T
+ 21: z Z
+ 22: u U
+ 23: i I
+ 24: o O
+ 25: p P
+ 26: š Š ÷
+ 27: đ Đ ×
+ 28: <Enter>
+ 29: <LCtrl>
+ 30: a A
+ 31: s S
+ 32: d D
+ 33: f F [
+ 34: g G ]
+ 35: h H
+ 36: j J
+ 37: k K ł
+ 38: l L Ł
+ 39: č Č
+ 40: ć Ć ß
+ 41: ¸ ¨
+ 42: <LShft>
+ 43: ž Ž ¤
+ 44: y Y
+ 45: x X
+ 46: c C
+ 47: v V @
+ 48: b B {
+ 49: n N }
+ 50: m M §
+ 51: , ; <
+ 52: . : >
+ 53: - _
+ 54: <RShft>
+ 55: <KP*>
+ 56: <LAlt>
+ 57:
+ 58: <CpsLk>
+ 59: <F1>
+ 60: <F2>
+ 61: <F3>
+ 62: <F4>
+ 63: <F5>
+ 64: <F6>
+ 65: <F7>
+ 66: <F8>
+ 67: <F9>
+ 68: <F10>
+ 69: <NumLk>
+ 70: <ScrLk>
+ 71: <KP7>
+ 72: <KP8>
+ 73: <KP9>
+ 74: <KP->
+ 75: <KP4>
+ 76: <KP5>
+ 77: <KP6>
+ 78: <KP+>
+ 79: <KP1>
+ 80: <KP2>
+ 81: <KP3>
+ 82: <KP0>
+ 83: <KP.>
+ 84: < >
+ 85: <F11>
+ 86: <F12>
+ 87: <KPEnt>
+ 88: <RCtrl>
+ 89: <KP/>
+ 90: <SysRq>
+ 91: <AltGr>
+ 92: <Break>
+ 93: <Home>
+ 94: <Up>
+ 95: <PgUp>
+ 96: <Left>
+ 97: <Right>
+ 98: <End>
+ 99: <Down>
+100: <PgDn>
+101: <Ins>
+102: <Del>
+103: <Pause>
+104: <LMeta>
+105: <RMeta>
+106: <Menu>
+```
 
 How does one know which lines belong to character keys and which lines to function keys?
 
