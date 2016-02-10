@@ -92,10 +92,7 @@ otherwise you may only see odd characters (like ꑶ etc.) when pressing characte
 keys.
 
 logkeys acts as a daemon, and you stop the running logger process with
-
-    $ logkeys --kill
-
-(or bin/llkk provided script).
+`$ logkeys --kill`, or use the `bin/llkk` script.
 
 For more information about logkeys log file format, logkeys keymap
 format, and command line arguments, read the application manual, `$
@@ -131,7 +128,7 @@ to be used. If you don't see any output, press Ctrl+C and continue with the
 next device.
 
 If this happened to be your issue, *please* submit a bug report, attaching
-your /proc/bus/input/devices file as well as and specifying which was the
+your `/proc/bus/input/devices` file as well as and specifying which was the
 correct id.
 
 
@@ -161,16 +158,12 @@ please upload it to website or send it to me by e-mail. Thanks.
 Read the man page. Please read the whole man page. Thanks. :-)
 
 Refer to troubleshooting and FAQ sections on the project website,
+http://code.google.com/p/logkeys/, for currently known issues, ways to
+resolve them, and any other information.
 
- http://code.google.com/p/logkeys/ ,
-
-for currently known issues, ways to resolve them, and any other information.
-
-Report any bugs and request reasonable features on the issues list page
-
- http://code.google.com/p/logkeys/issues .
-
-When opening new issues, always provide descriptively keyworded summary and
+Report any bugs and request reasonable features on the issues list
+page http://code.google.com/p/logkeys/issues.  When opening new
+issues, always provide descriptively keyworded summary and
 description.
 
 You are more than welcome to implement unreasonable features yourself, as well
