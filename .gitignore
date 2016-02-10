@@ -22,9 +22,3 @@ man/Makefile.in
 scripts/Makefile.in
 src/Makefile.in
 autom4te.cache/
-Makefile
-config.h
-config.status
-man/Makefile
-scripts/Makefile
-stamp-h1
