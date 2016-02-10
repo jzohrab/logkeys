@@ -139,7 +139,7 @@ It is very likely that you will see only some characters recognized, without any
 
 Then open _my\_lang.map_ in UTF-8 enabled text editor and manually repair any missing or incorrectly determined mappings. Character keys are defined with two to three space-delimited characters per line (first without modifiers, second with shift, third with AltGr), and function keys are strings of **at most** 7 characters.
 
-Make sure your customized keymap follows the [logkeys keymap format specification](Keymaps.md#Format).
+Make sure your customized keymap follows the [logkeys keymap format specification](Keymaps.md#format).
 
 From then on, execute logkeys with **--keymap** switch, e.g.
 
