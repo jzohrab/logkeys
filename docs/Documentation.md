@@ -128,7 +128,7 @@ The procedure for manually learning the device id to use is as follows:
 
 As root, for each existing device <i>eventX</i> in <i>/dev/input/</i>, where X is a number between 0 and 31 inclusively, write `$ cat /dev/input/eventX`, and then type some arbitrary characters. If you <b>see any output</b>, that is the <b>device to be used</b>. If you don't see any output, press Ctrl+C and continue with the next device.
 
-If this happened to be your issue, please <a href='http://code.google.com/p/logkeys/source/checkout'>checkout the latest version from the repository</a> where keyboard recognition is relatively better implemented. If error persists, <b>please add to bug report <a href='http://code.google.com/p/logkeys/issues/detail?id=42'>here</a></b>, attaching your <i>/proc/bus/input/devices</i> file as well as specifying which was the correct event id. Thanks.
+If this happened to be your issue, please checkout the latest version from the repository where keyboard recognition is relatively better implemented. If error persists, please [add an issue](https://github.com/kernc/logkeys/issues), attaching your <i>/proc/bus/input/devices</i> file as well as specifying the correct event id.
 
 
 ## Logkeys outputs wrong characters ##
@@ -151,20 +151,23 @@ From then on, execute logkeys with **--keymap** switch, e.g.
 
 Again, see if it now works correctly (and character keys appear correct when you are viewing the log file in editor), and opt to modify _bin/llk_ starter script.
 
-If you create full and completely valid keymap for your particular language,
-please [upload it as a new issue](http://code.google.com/p/logkeys/issues/) or send it to me by e-mail. Thanks.
-Some languages may already have [keymaps available](http://code.google.com/p/logkeys/wiki/Keymaps#Download).
+If you create full and completely valid keymap for your particular
+language, please [upload it as a new
+issue](https://github.com/kernc/logkeys/issues).
+
+Some languages may already have keymaps available; check the [keymaps directory](../keymaps/).
 
 # Known bugs and limitations #
 
-Please report all found bugs on the [issues tracking page](http://code.google.com/p/logkeys/issues/).
+Please report all found bugs on the [issues tracking page](https://github.com/kernc/logkeys/issues).
 
 # Planned features (roadmap) #
 
-TODO file provided with release currently holds following demanded features:
-  * Add support for sending logs via email.
-  * Optionally log title of the focused window.
-  * Capture clipboard contents.
-  * Add support for mouse events (i.e. on mouse click the focus may have changed).
+TODO file provided with release currently holds following requests:
 
-If you have time on your hands and the required interest, you are welcome to hack at any of those or completely other features yourself.
+* Add support for sending logs via email.
+* Optionally log title of the focused window.
+* Capture clipboard contents.
+* Add support for mouse events (i.e. on mouse click the focus may have changed).
+
+If you have time on your hands and the required interest, you are welcome to hack at any of those or completely other features yourself, and submit a PR.
