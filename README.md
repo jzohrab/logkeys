@@ -80,8 +80,7 @@ logkeys acts as a daemon, and you stop the running logger process with
 
 For more information about logkeys log file format, logkeys keymap
 format, and command line arguments, read the application manual, `$
-man logkeys`, or see the wiki at project website:
-http://code.google.com/p/logkeys/
+man logkeys`, or read [the documentation](./docs).
 
 Abuse the output of this software wisely.
 
@@ -141,14 +140,13 @@ please upload it to website or send it to me by e-mail. Thanks.
 
 Read the man page. Please read the whole man page. Thanks. :-)
 
-Refer to troubleshooting and FAQ sections on the project website,
-http://code.google.com/p/logkeys/, for currently known issues, ways to
+Refer to troubleshooting and FAQ sections in (the
+docs)[./docs/Documentation.md], for currently known issues, ways to
 resolve them, and any other information.
 
-Report any bugs and request reasonable features on the issues list
-page http://code.google.com/p/logkeys/issues.  When opening new
-issues, always provide descriptively keyworded summary and
-description.
+Report any bugs and request reasonable features on the [issues
+list](https://github.com/kernc/logkeys/issues).  When opening new
+issues, always provide a good summary and description.
 
 You are more than welcome to implement unreasonable features yourself, as well
 as hack the program to your liking.
