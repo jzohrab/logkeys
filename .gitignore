@@ -17,6 +17,7 @@ build/
 Makefile.in
 aclocal.m4
 configure
+config.h.in
 man/Makefile.in
 scripts/Makefile.in
 src/Makefile.in
