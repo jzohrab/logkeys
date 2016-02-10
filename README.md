@@ -149,11 +149,19 @@ Report any bugs and request reasonable features on the [issues
 list](https://github.com/kernc/logkeys/issues).  When opening new
 issues, always provide a good summary and description.
 
+## Contribute
+
 You are more than welcome to implement unreasonable features yourself, as well
 as hack the program to your liking.
 
-If you are a pr0, please answer the few questions commented in the source.
-Thanks.
+If you have suggestions, or are a pr0 and can answer any of the questions in the source, please contribute:
+
+1. Fork this project
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Commit your changes (`git commit -am 'Add some feature'`)
+1. Push to the branch (`git push origin my-new-feature`)
+1. Create new Pull Request
+
 
 ## Licence
 
