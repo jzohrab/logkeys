@@ -9,3 +9,15 @@ src/scripts/Makefile
 src/src/Makefile
 src/src/.deps
 src/stamp-h1
+
+# Ignore artifacts in build
+build/
+
+# Ignore automake, autoconf, etc generated artifacts.
+Makefile.in
+aclocal.m4
+configure
+man/Makefile.in
+scripts/Makefile.in
+src/Makefile.in
+autom4te.cache/
