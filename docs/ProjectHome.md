@@ -1,3 +1,5 @@
+![warning](./docs_warning.png)
+
 # logkeys Linux keylogger #
 
 

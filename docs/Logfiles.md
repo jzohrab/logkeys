@@ -1,3 +1,5 @@
+![warning](./docs_warning.png)
+
 When no **--ouput** option is given, logkeys logs to default log file `/var/log/logkeys.log`.
 
 # Format #

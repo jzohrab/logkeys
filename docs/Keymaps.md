@@ -1,3 +1,5 @@
+![warning](./docs_warning.png)
+
 # Keymaps
 
 If neither **--us-keymap** switch nor **--keymap** switch are used, then logkeys determines the keymap automatically with the help of **dumpkeys** command. For it to work even slightly reliably (mapping correct character), [console kernel keymap needs to be set](Documentation#Installation.md).

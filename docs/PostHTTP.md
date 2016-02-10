@@ -1,3 +1,5 @@
+![warning](./docs_warning.png)
+
 # Post to HTTP #
 A sample implementation:
   1. Get some [PHP web hosting](http://www.google.com/search?q=free+web+hosting), get [domain name](http://GetFreeDomain-Site.co.cc/list).
