@@ -6,6 +6,7 @@
 # Runs autoconf, autoheader, aclocal, automake, autopoint, libtoolize
 echo "Regenerating autotools files"
 aclocal \
+&& autoheader \
 && automake --add-missing \
 && autoconf
 
