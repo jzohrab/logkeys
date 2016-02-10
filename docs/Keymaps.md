@@ -12,9 +12,9 @@ Some keymaps have been committed in this repo.  See the [keymaps directory](../k
 
 Be aware that using the keymap that matches your keyboard layout doesn't necessarily mean that all keys are covered or that the characters match to those that you type in – the keymap used by your system (loaded by **loadkeys** command for console, and **setxkbmap** command for X) may be set completely arbitrarily. In most cases, though, these should work fine.
 
-... (upload yours as a [new issue](http://code.google.com/p/logkeys/issues/))
+## Creating keymaps
 
-You can easily create keymaps for your layout by taking one example and then modifying it with the help of [keyboard layout tool](http://msdn.microsoft.com/en-us/goglobal/bb964651.aspx) by Microsoft.
+You can easily create keymaps for your layout by taking one example and then modifying it with the help of a keyboard layout tool (e.g., see the following [example layout tool from Microsoft](http://msdn.microsoft.com/en-us/goglobal/bb964651.aspx)).  If you create a keymap, please upload it as a [new issue](https://github.com/kernc/logkeys/issues).
 
 ## Format
 
@@ -153,8 +153,3 @@ the  key  just  right  to  left Shift that is present on some international layo
 Other lines can be quite reliably determined by looking at one exported keymap.  The
 keys generally follow the order of their appearance on keyboard, top-to-bottom left-
 to-right.
-
-If you create full and completely valid keymap for your particular language, please
-upload the contents as a [new issue](http://code.google.com/p/logkeys/issues/) or send it to my e-mail. Thanks!
-
-When arranging your keymap file, you can help yourself with this [keyboard layout tool](http://msdn.microsoft.com/en-us/goglobal/bb964651.aspx) provided by Microsoft.
