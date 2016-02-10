@@ -1,22 +1,6 @@
-# logkeys - a GNU/Linux keylogger that works!
+# logkeys - a GNU/Linux keylogger
 
-  0. Licence
-  1. Description
-  2. Installation
-  3. Usage how-to
-  4. Troubleshooting
-  5. Further information
-
-## 0. Licence
-
-logkeys is dual licensed under the terms of either GNU GPLv3 or later, or 
-WTFPLv2 or later. It is entirely your choice! See COPYING for further 
-information about licensing.
-
-
-## 1. Description
-
-logkeys is a linux keylogger. It is no more advanced than other available linux
+logkeys is a linux keylogger.  It is no more advanced than other available linux
 keyloggers, notably lkl and uberkey, but is a bit newer, more up to date, it
 doesn't unreliably repeat keys and it shouldn't crash your X. All in all, it
 just seems to work. It relies on event interface of the Linux input subsystem. 
@@ -24,7 +8,7 @@ Once completely set, it logs all common character and function keys, while also
 being fully aware of Shift and AltGr key modifiers.
 
 
-## 2. Installation
+## Installation
 
 Provided your GNU/Linux distribution doesn't include logkeys package in its
 repositories, manual installation of logkeys from source is as easy as:
@@ -46,7 +30,7 @@ To ever uninstall logkeys, remove accompanying scripts and manuals, issue
 A copy of these instructions is in the accompanying INSTALL file.
 
 
-## 3. Usage how-to
+## Usage how-to
 
 logkeys is simple. You can either invoke it directly, by typing full command 
 line, or use the provided scripts. There are two helper programs in this 
@@ -102,9 +86,9 @@ http://code.google.com/p/logkeys/
 Abuse the output of this software wisely.
 
 
-## 4. Troubleshooting
+## Troubleshooting
 
-### 4.1 empty log file or 'Error opening input event device'
+### empty log file or 'Error opening input event device'
 
 After you run logkeys successfully, if you open the log file and see only the
 'Logging started...' and 'Logging stopped...' tag without any keypress
@@ -132,7 +116,7 @@ your `/proc/bus/input/devices` file as well as and specifying which was the
 correct id.
 
 
-### 4.2 logkeys outputs wrong characters
+### logkeys outputs wrong characters
 
 It is very likely that you will see only some characters recognized, without
 any hope for Shift and AltGr working even slightly correct, especially when
@@ -153,7 +137,7 @@ If you create full and completely valid keymap for your particular language,
 please upload it to website or send it to me by e-mail. Thanks.
 
 
-## 5. Further information
+## Further information
 
 Read the man page. Please read the whole man page. Thanks. :-)
 
@@ -172,3 +156,8 @@ as hack the program to your liking.
 If you are a pr0, please answer the few questions commented in the source.
 Thanks.
 
+## Licence
+
+logkeys is dual licensed under the terms of either GNU GPLv3 or later, or
+WTFPLv2 or later. It is entirely your choice! See COPYING for further
+information about licensing.
